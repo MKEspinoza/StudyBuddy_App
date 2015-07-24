@@ -1,14 +1,17 @@
 <resources>
-    <string name="app_name">StudyBuddy_App</string>
+    <string name="app_name">Study Buddy</string>
 
-    <string name="title_section1">Section 1</string>
-    <string name="title_section2">Section 2</string>
-    <string name="title_section3">Section 3</string>
+    <string name="buddy">My Buddy</string>
+    <string name="courses">Courses</string>
+    <string name="assign">Assignments</string>
+    <string name="grades">Grades</string>
+    <string name="cal">Calender</string>
+    <string name="timer">Timer</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
-    <string name="action_example">Example action</string>
+    <string name="action_example">DON'T PRESS</string>
 
     <string name="action_settings">Settings</string>
 </resources>

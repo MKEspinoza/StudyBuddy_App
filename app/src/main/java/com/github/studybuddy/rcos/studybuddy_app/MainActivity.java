@@ -49,23 +49,55 @@ public class MainActivity extends ActionBarActivity
 
     @Override
     public void onNavigationDrawerItemSelected(int position) {
+
+        Fragment objFragment= null;
+
+        switch (position) {
+            case 0:
+                objFragment= new buddy_Fragment();
+                break;
+            case 1:
+                objFragment= new course_Fragment();
+                break;
+            case 2:
+                objFragment= new assign_Fragment();
+                break;
+            case 3:
+                objFragment= new grade_Fragment();
+                break;
+            case 4:
+                objFragment= new cal_Fragment();
+                break;
+            case 5:
+                objFragment= new timer_Fragment();
+                break;
+        }
         // update the main content by replacing fragments
         FragmentManager fragmentManager = getSupportFragmentManager();
         fragmentManager.beginTransaction()
-                .replace(R.id.container, PlaceholderFragment.newInstance(position + 1))
+                .replace(R.id.container, objFragment)
                 .commit();
     }
 
     public void onSectionAttached(int number) {
         switch (number) {
             case 1:
-                mTitle = getString(R.string.title_section1);
+                mTitle = getString(R.string.buddy);
                 break;
             case 2:
-                mTitle = getString(R.string.title_section2);
+                mTitle = getString(R.string.courses);
                 break;
             case 3:
-                mTitle = getString(R.string.title_section3);
+                mTitle = getString(R.string.assign);
+                break;
+            case 4:
+                mTitle = getString(R.string.grades);
+                break;
+            case 5:
+                mTitle = getString(R.string.cal);
+                break;
+            case 6:
+                mTitle = getString(R.string.timer);
                 break;
         }
     }
