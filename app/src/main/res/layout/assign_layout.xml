@@ -23,9 +23,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/add_assign_button"
-            android:id="@+id/button"
+            android:id="@+id/add_assign_button"
             android:layout_below="@+id/textView"
-            android:layout_centerHorizontal="true" />
+            android:layout_centerHorizontal="true"
+            android:onClick="click_add_assign"/>
 
     </LinearLayout>
 
