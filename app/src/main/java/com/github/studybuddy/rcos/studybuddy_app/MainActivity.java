@@ -1,6 +1,7 @@
 package com.github.studybuddy.rcos.studybuddy_app;
 
 import android.app.Activity;
+import android.graphics.drawable.AnimationDrawable;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBar;
 import android.support.v4.app.Fragment;
@@ -18,9 +19,12 @@ import android.support.v4.widget.DrawerLayout;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
-
-public class MainActivity extends ActionBarActivity
+@SuppressWarnings("deprecation")
+class MainActivity extends ActionBarActivity
         implements NavigationDrawerFragment.NavigationDrawerCallbacks {
+
+        //create animation object:
+        static AnimationDrawable BuddyBreathing;
 
     /**
      * Fragment managing the behaviors, interactions and presentation of the navigation drawer.
