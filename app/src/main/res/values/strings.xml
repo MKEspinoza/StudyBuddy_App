@@ -3,7 +3,7 @@
 
     <string name="buddy">My Buddy</string>
     <string name="courses">Courses</string>
-    <string name="assign">Assignments</string>
+    <string name="assign">Assignment Pad</string>
     <string name="grades">Grades</string>
     <string name="cal">Calender</string>
     <string name="timer">Timer</string>
@@ -11,7 +11,12 @@
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
-    <string name="action_example">DON'T PRESS</string>
+    <string name="action_example">DON\'T PRESS</string>
 
     <string name="action_settings">Settings</string>
+
+    <!-- Strings for Assignment_Pad -->
+    <string name="add_assign_button">Add Assignment</string>
+    <string name="add_assign_title">Add Assignment</string>
+    <string name="button_done">Done</string>
 </resources>
