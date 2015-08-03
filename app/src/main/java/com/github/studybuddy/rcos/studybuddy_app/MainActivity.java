@@ -1,6 +1,8 @@
 package com.github.studybuddy.rcos.studybuddy_app;
 
 import android.app.Activity;
+import android.content.res.Configuration;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBar;
 import android.support.v4.app.Fragment;
@@ -45,6 +47,7 @@ public class MainActivity extends ActionBarActivity
         mNavigationDrawerFragment.setUp(
                 R.id.navigation_drawer,
                 (DrawerLayout) findViewById(R.id.drawer_layout));
+
     }
 
     @Override

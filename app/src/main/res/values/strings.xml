@@ -11,7 +11,18 @@
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
-    <string name="action_example">DON'T PRESS</string>
+    <string name="action_example">DONT PRESS</string>
 
     <string name="action_settings">Settings</string>
+
+
+    <string name="classesList">Courses</string>
+    <string name="credits">Credits</string>
+    <string name="percentIn">Percent In</string>
+    <string name="Grade">Grades</string>
+    <string name="GPA">GPA</string>
+    <string name="maxFinal">Max Final Grade</string>
+    <string name="minFinal">Min Final Grade</string>
+    <string name="total1">Total</string>
+    <string name="title_activity_grades">Grades</string>
 </resources>
