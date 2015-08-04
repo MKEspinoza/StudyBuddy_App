@@ -25,4 +25,8 @@
     <string name="minFinal">Min Final Grade</string>
     <string name="total1">Total</string>
     <string name="title_activity_grades">Grades</string>
+    <string name="add_class_button_text">Add Class</string>
+    <string name="add_assignment_button_text">Add Assignment</string>
+    <string name="edit_assignments_button_text">Edit Assignments</string>
+    <string name="edit_class_button_text">Edit Courses</string>
 </resources>

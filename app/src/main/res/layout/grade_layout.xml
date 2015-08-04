@@ -2,14 +2,58 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent" android:layout_height="match_parent">
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/add_assignment_button_text"
+        android:textSize="12sp"
+        android:id="@+id/add_assignment_button"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/edit_assignments_button_text"
+        android:textSize="12sp"
+        android:id="@+id/edit_assignments_button"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/add_assignment_button"
+        android:layout_toStartOf="@+id/add_assignment_button" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/edit_class_button_text"
+        android:textSize="12sp"
+        android:id="@+id/edit_class_button"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/edit_assignments_button"
+        android:layout_toStartOf="@+id/edit_assignments_button"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/add_class_button_text"
+        android:textSize="12sp"
+        android:id="@+id/add_class_button"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/edit_class_button"
+        android:layout_toStartOf="@+id/edit_class_button"
+        />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="@string/grades"
         android:id="@+id/textView"
+        android:textSize="30sp"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <TableLayout
         android:id="@+id/tableLayoutView1"
@@ -111,7 +155,7 @@
                 android:id="@+id/textRow2Col7"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="row"
+                android:text=""
                 />
         </TableRow>
         <TableRow
@@ -161,7 +205,7 @@
                 android:id="@+id/textRow3Col7"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="row"
+                android:text=""
                 />
         </TableRow>
         <TableRow
@@ -209,7 +253,7 @@
                 android:id="@+id/textRow4Col7"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="row"
+                android:text=""
                 />
         </TableRow>
         <TableRow
@@ -257,7 +301,7 @@
                 android:id="@+id/textRow5Col7"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="row"
+                android:text=""
                 />
         </TableRow>
         <TableRow
@@ -305,7 +349,7 @@
                 android:id="@+id/textRow6Col7"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="row"
+                android:text=""
                 />
         </TableRow>
         <TableRow
@@ -353,7 +397,7 @@
                 android:id="@+id/textRow7Col7"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="row"
+                android:text=""
                 />
         </TableRow>
         <TableRow
@@ -401,7 +445,7 @@
                 android:id="@+id/textRow8Col7"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="row"
+                android:text=""
                 />
         </TableRow>
         <TableRow
@@ -449,7 +493,7 @@
                 android:id="@+id/textRow9Col7"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="row"
+                android:text=""
                 />
         </TableRow>
         <TableRow
