@@ -16,7 +16,11 @@
     <string name="action_settings">Settings</string>
 
     <!-- Strings for Assignment_Pad -->
-    <string name="add_assign_button">Add Assignment</string>
-    <string name="add_assign_title">Add Assignment</string>
-    <string name="button_done">Done</string>
+    <string name="add_assign_button">Add</string>
+    <string name="add_assign_title">New Assignment</string>
+    <string name="add_assign_input_title">Title</string>
+    <string name="add_assign_input_class">Class</string>
+    <string name="add_assign_input_points">Points</string>
+    <string name="add_assign_request_duedate">Due Date:</string>
+    <string name="edit_button">Edit</string>
 </resources>
