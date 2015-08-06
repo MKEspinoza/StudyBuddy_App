@@ -125,7 +125,7 @@ android:layout_height="fill_parent">
                 android:layout_height="200sp"
                 android:inputType="textMultiLine"
                 android:textSize="20sp"
-                android:hint="Type in important details"/>
+                android:hint="Type in important detales"/>
         </RelativeLayout>
 
 
