@@ -26,4 +26,23 @@
     <string name="title_activity_timer">Timer</string>
 
     <string name="hello_world">Hello world!</string>
+
+
+    <string name="classesList">Courses</string>
+    <string name="credits">Credits</string>
+    <string name="percentIn">Percent In</string>
+    <string name="Grade">Grades</string>
+    <string name="GPA">GPA</string>
+    <string name="maxFinal">Max Final Grade</string>
+    <string name="minFinal">Min Final Grade</string>
+    <string name="total1">Total</string>
+    <string name="title_activity_grades">Grades</string>
+    <string name="add_class_button_text">Add Class</string>
+    <string name="add_assignment_button_text">Add Assignment</string>
+    <string name="edit_assignments_button_text">Edit Assignments</string>
+    <string name="edit_class_button_text">Edit Courses</string>
+    <string name="AddAssignmentText">AddAssignment</string>
+    <string name="EditAssignmentText">Edit Assignments</string>
+    <string name="AddClassText">Add Class</string>
+    <string name="EditClassesText">Edit Classes</string>
 </resources>

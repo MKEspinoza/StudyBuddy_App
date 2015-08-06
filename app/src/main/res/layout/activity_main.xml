@@ -22,4 +22,5 @@
         android:name="com.github.studybuddy.rcos.studybuddy_app.NavigationDrawerFragment"
         tools:layout="@layout/fragment_navigation_drawer" />
 
+
 </android.support.v4.widget.DrawerLayout>
