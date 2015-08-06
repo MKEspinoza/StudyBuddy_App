@@ -60,7 +60,7 @@ public class MainActivity extends ActionBarActivity
                 objFragment= new course_Fragment();
                 break;
             case 2:
-                objFragment= new assign_add_edit_date();
+                objFragment= new assign_Fragment();
                 break;
             case 3:
                 objFragment= new grade_Fragment();

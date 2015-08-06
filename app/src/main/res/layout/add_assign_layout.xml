@@ -23,7 +23,8 @@ android:layout_height="fill_parent">
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/add_assign_button"
-            android:textSize="20dp"/>
+            android:textSize="20dp"
+            android:id="@+id/button_done_add_assign"/>
 
         <Space
             android:layout_width="wrap_content"
@@ -33,20 +34,23 @@ android:layout_height="fill_parent">
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/add_assign_input_title"
-            android:textSize="30sp"/>
+            android:textSize="30sp"
+            android:id="@+id/assign_title_input"/>
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/add_assign_input_class"
-            android:textSize="30sp"/>
+            android:textSize="30sp"
+            android:id="@+id/assign_class_input"/>
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/add_assign_input_points"
             android:textSize="30sp"
-            android:inputType="numberSigned"/>
+            android:inputType="numberSigned"
+            android:id="@+id/assign_point_input"/>
 
         <Space
             android:layout_width="wrap_content"
@@ -67,7 +71,8 @@ android:layout_height="fill_parent">
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/edit_button" />
+                android:text="@string/edit_button"
+                android:id="@+id/button_edit_date"/>
 
             <Space
                 android:layout_width="50dp"
@@ -125,7 +130,8 @@ android:layout_height="fill_parent">
                 android:layout_height="200sp"
                 android:inputType="textMultiLine"
                 android:textSize="20sp"
-                android:hint="Type in important detales"/>
+                android:hint="Type in important detales"
+                android:id="@+id/assign_descript_input"/>
         </RelativeLayout>
 
 

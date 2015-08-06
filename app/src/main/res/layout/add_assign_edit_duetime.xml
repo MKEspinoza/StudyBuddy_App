@@ -2,26 +2,25 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/add_assign_edit_date_layout">
+    android:weightSum="1">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Change Due Date"
-        android:textSize="40sp"
-        android:layout_gravity="center"/>
+        android:text="Change Due Date Time"
+        android:layout_gravity="center"
+        android:textSize="40sp"/>
 
-    <DatePicker
+    <TimePicker
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/duedatePicker" />
+        android:id="@+id/timePicker" />
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:id="@+id/button_duetime_done"
         android:textSize="20sp"
-        android:text="SET DUE DATE"
-        android:id="@+id/button_duedate_done"/>
-
+        android:text="SET DUE DATE - TIME"/>
 
 </LinearLayout>

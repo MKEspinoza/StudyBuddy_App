@@ -1,5 +1,6 @@
 package com.github.studybuddy.rcos.studybuddy_app;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -23,15 +24,7 @@ public class assign_Fragment extends Fragment {
         {
             @Override
             public void onClick(View v){
-                assign_add_Fragment add_fragment = new assign_add_Fragment();
-
-                FragmentManager fragmentManager = getFragmentManager();
-                android.support.v4.app.FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-//                fragmentManager.beginTransaction().replace(R.id.add_assign_layout, fragment).commit();
-
-                fragmentTransaction.replace(android.R.id.content,
-                        add_fragment);
-
+                startActivity(new Intent(getActivity(), assign_add_Fragment.class));
             }
 
         });
