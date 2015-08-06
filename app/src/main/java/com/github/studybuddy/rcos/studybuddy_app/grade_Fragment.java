@@ -141,7 +141,7 @@ public class grade_Fragment extends Fragment {
 
 
         ClassData[] classesArray = new ClassData[8];
-        Vector<ClassData> classesList = new Vector<ClassData>();   //A list to hold the current classes(ClassData objects)
+        final Vector<ClassData> classesList = new Vector<ClassData>();   //A list to hold the current classes(ClassData objects)
 
         ClassData CS2 = new ClassData("CS2", 4);
         classesList.addElement(CS2);
@@ -219,5 +219,5 @@ public class grade_Fragment extends Fragment {
 
         return rootview;
     }
-    
+
 }
