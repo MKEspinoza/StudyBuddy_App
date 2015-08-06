@@ -113,14 +113,31 @@ public class grade_Fragment extends Fragment {
         DecimalFormat df = new DecimalFormat("00.00");
 
 
-
+        //Connecting the 4 buttons to their respective pages
         Button AddAssignmentButton = (Button) rootview.findViewById(R.id.add_assignment_button);
         AddAssignmentButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 startActivity(new Intent(getActivity(), AddAssignment.class));
             }
         });
-
+        Button EditAssignmentsButton = (Button) rootview.findViewById(R.id.edit_assignments_button);
+        EditAssignmentsButton.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                startActivity(new Intent(getActivity(), EditAssignments.class));
+            }
+        });
+        Button AddClassButton = (Button) rootview.findViewById(R.id.add_class_button);
+        AddClassButton.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                startActivity(new Intent(getActivity(), AddClass.class));
+            }
+        });
+        Button EditClassesButton = (Button) rootview.findViewById(R.id.edit_class_button);
+        EditClassesButton.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                startActivity(new Intent(getActivity(), EditClasses.class));
+            }
+        });
 
 
         ClassData[] classesArray = new ClassData[8];
@@ -202,9 +219,5 @@ public class grade_Fragment extends Fragment {
 
         return rootview;
     }
-
-    public void openAddAssignment(View view){
-        Intent intent = new Intent(getActivity(), AddAssignment.class);
-        startActivity(intent);
-    }
+    
 }

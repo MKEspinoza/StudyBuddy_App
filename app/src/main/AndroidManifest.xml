@@ -24,7 +24,23 @@
         </activity>
         <activity
             android:name=".AddAssignment"
-            android:label="@string/AddAssignmentText" >
+            android:label="@string/AddAssignmentText"
+            android:parentActivityName=".MainActivity" >
+        </activity>
+        <activity
+            android:name=".EditAssignments"
+            android:label="@string/EditAssignmentText"
+            android:parentActivityName=".MainActivity" >
+        </activity>
+        <activity
+            android:name=".AddClass"
+            android:label="@string/AddClassText"
+            android:parentActivityName=".MainActivity" >
+        </activity>
+        <activity
+            android:name=".EditClasses"
+            android:label="@string/EditClassesText"
+            android:parentActivityName=".MainActivity" >
         </activity>
     </application>
 

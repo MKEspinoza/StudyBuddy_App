@@ -22,7 +22,7 @@
         android:layout_alignParentTop="true"
         android:layout_toLeftOf="@+id/add_assignment_button"
         android:layout_toStartOf="@+id/add_assignment_button"
-        android:onClick="openAddAssignmentButton"/>
+        android:onClick="openEditAssignments"/>
 
     <Button
         android:layout_width="wrap_content"

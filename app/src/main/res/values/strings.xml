@@ -30,4 +30,7 @@
     <string name="edit_assignments_button_text">Edit Assignments</string>
     <string name="edit_class_button_text">Edit Courses</string>
     <string name="AddAssignmentText">AddAssignment</string>
+    <string name="EditAssignmentText">Edit Assignments</string>
+    <string name="AddClassText">Add Class</string>
+    <string name="EditClassesText">Edit Classes</string>
 </resources>
