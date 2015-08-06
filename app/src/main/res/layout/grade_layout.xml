@@ -10,7 +10,8 @@
         android:id="@+id/add_assignment_button"
         android:layout_alignParentTop="true"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        android:onClick="openAddAssignment"/>
 
     <Button
         android:layout_width="wrap_content"
@@ -20,7 +21,8 @@
         android:id="@+id/edit_assignments_button"
         android:layout_alignParentTop="true"
         android:layout_toLeftOf="@+id/add_assignment_button"
-        android:layout_toStartOf="@+id/add_assignment_button" />
+        android:layout_toStartOf="@+id/add_assignment_button"
+        android:onClick="openAddAssignmentButton"/>
 
     <Button
         android:layout_width="wrap_content"

@@ -29,4 +29,5 @@
     <string name="add_assignment_button_text">Add Assignment</string>
     <string name="edit_assignments_button_text">Edit Assignments</string>
     <string name="edit_class_button_text">Edit Courses</string>
+    <string name="AddAssignmentText">AddAssignment</string>
 </resources>

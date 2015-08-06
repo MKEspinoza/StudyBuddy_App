@@ -9,6 +9,7 @@ import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
 
 import java.text.DecimalFormat;
@@ -109,8 +110,18 @@ public class grade_Fragment extends Fragment {
         rootview = inflater.inflate(R.layout.grade_layout, container, false);
 
         getActivity().setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
-
         DecimalFormat df = new DecimalFormat("00.00");
+
+
+
+        Button AddAssignmentButton = (Button) rootview.findViewById(R.id.add_assignment_button);
+        AddAssignmentButton.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                startActivity(new Intent(getActivity(), AddAssignment.class));
+            }
+        });
+
+
 
         ClassData[] classesArray = new ClassData[8];
         Vector<ClassData> classesList = new Vector<ClassData>();   //A list to hold the current classes(ClassData objects)
@@ -192,38 +203,8 @@ public class grade_Fragment extends Fragment {
         return rootview;
     }
 
-/*
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        //setContentView(R.layout.activity_grades2);
-
-        //this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
-
-        DecimalFormat df = new DecimalFormat("00.00");
-
-        ClassData[] classesArray = new ClassData[8];
-        Vector<ClassData> classesList = new Vector<ClassData>();   //A list to hold the current classes(ClassData objects)
-
-        ClassData CS2 = new ClassData("CS2", 4);
-        classesList.addElement(CS2);
-        CS2.addAnAssignment("exam1", 30, 85.5);
-        CS2.addAnAssignment("exam2", 13, 92);
-        textRow2Col1 = (TextView) textRow2Col1.findViewById(R.id.textRow2Col1);
-        textRow2Col1.setText(CS2.getClassName());
-        textRow2Col2 = (TextView) textRow2Col2.findViewById(R.id.textRow2Col2);
-        textRow2Col2.setText(Integer.toString(CS2.getCredits()));
-        textRow2Col3 = (TextView) textRow2Col3.findViewById(R.id.textRow2Col3);
-        textRow2Col3.setText(CS2.getPercentInSTR());
-        textRow2Col4 = (TextView) textRow2Col4.findViewById(R.id.textRow2Col4);
-        textRow2Col4.setText(CS2.getGradeSTR());
-        textRow2Col5 = (TextView) textRow2Col5.findViewById(R.id.textRow2Col5);
-        textRow2Col5.setText(CS2.getLetterGPA());
-        textRow2Col6 = (TextView) textRow2Col6.findViewById(R.id.textRow2Col6);
-        textRow2Col6.setText(CS2.getMaxPossibleSTR());
-        textRow2Col7 = (TextView) textRow2Col7.findViewById(R.id.textRow2Col7);
-        textRow2Col7.setText(CS2.getMinPossibleSTR());
+    public void openAddAssignment(View view){
+        Intent intent = new Intent(getActivity(), AddAssignment.class);
+        startActivity(intent);
     }
-*/
-
 }
