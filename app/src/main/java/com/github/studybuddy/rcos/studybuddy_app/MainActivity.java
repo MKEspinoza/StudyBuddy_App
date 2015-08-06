@@ -1,7 +1,6 @@
 package com.github.studybuddy.rcos.studybuddy_app;
 
 import android.app.Activity;
-import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBar;
 import android.support.v4.app.Fragment;
@@ -18,9 +17,6 @@ import android.view.ViewGroup;
 import android.support.v4.widget.DrawerLayout;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
-import android.widget.Button;
-
-import java.util.Timer;
 
 
 public class MainActivity extends ActionBarActivity
@@ -141,7 +137,6 @@ public class MainActivity extends ActionBarActivity
 
         return super.onOptionsItemSelected(item);
     }
-
 
     /**
      * A placeholder fragment containing a simple view.
