@@ -13,14 +13,16 @@ import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.support.v4.widget.DrawerLayout;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 @SuppressWarnings("deprecation")
-class MainActivity extends ActionBarActivity
+public class MainActivity extends ActionBarActivity
         implements NavigationDrawerFragment.NavigationDrawerCallbacks {
 
         //create animation object:
@@ -49,6 +51,14 @@ class MainActivity extends ActionBarActivity
         mNavigationDrawerFragment.setUp(
                 R.id.navigation_drawer,
                 (DrawerLayout) findViewById(R.id.drawer_layout));
+    }
+
+    public boolean onTouchEvent (MotionEvent event){
+        if (event.getAction() == MotionEvent.ACTION_DOWN){
+            BuddyBreathing.start();
+            return true;
+        }
+        return super.onTouchEvent(event);
     }
 
     @Override
@@ -171,9 +181,14 @@ class MainActivity extends ActionBarActivity
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                                  Bundle savedInstanceState) {
             View rootView = inflater.inflate(R.layout.fragment_main, container, false);
-            return rootView;
-        }
 
+            ImageView BuddyImage = (ImageView) rootView.findViewById(R.id.Buddy_imgDrawable);
+            BuddyImage.setBackgroundResource(R.drawable.breathing_drawable);
+            BuddyBreathing = (AnimationDrawable) BuddyImage.getBackground();
+
+            return rootView;
+
+}
         @Override
         public void onAttach(Activity activity) {
             super.onAttach(activity);
