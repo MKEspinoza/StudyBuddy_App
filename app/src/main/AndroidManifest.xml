@@ -24,6 +24,10 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.github.studybuddy.rcos.studybuddy_app.MainActivity" />
         </activity>
+        <activity
+            android:name=".assign_add_Fragment"
+            android:label="Add New Assignment" >
+        </activity>
     </application>
 
 </manifest>
