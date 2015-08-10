@@ -33,4 +33,14 @@
     <string name="EditAssignmentText">Edit Assignments</string>
     <string name="AddClassText">Add Class</string>
     <string name="EditClassesText">Edit Classes</string>
+    <string name="add_class_ADD_button">ADD</string>
+    <string name="add_class_title">Title</string>
+    <string name="add_class_credits">Credits</string>
+    <string name="add_class_title_text">Add Class</string>
+    <string name="add_assignment_title_text">Add Assignment</string>
+    <string name="add_assignment_ADD_button">ADD</string>
+    <string name="add_assignment_title">Assignment Name</string>
+    <string name="add_assignment_class_name">Course Name</string>
+    <string name="add_assignment_percent_of_grade">Percent Of Grade</string>
+    <string name="add_assignment_score">Grade Received</string>
 </resources>

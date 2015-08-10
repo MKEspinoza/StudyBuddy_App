@@ -1,10 +1,96 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent" android:layout_height="match_parent">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Add Assignment"/>
+        android:text="@string/add_assignment_title_text"
+        android:textSize="40sp"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="20dp"
+        android:textStyle="bold"
+        android:id="@+id/addAssignmentTextView" />
 
-</LinearLayout>
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="10dp"
+        android:id="@+id/add_assignment_space3"
+        android:layout_below="@id/addAssignmentTextView"/>
+
+    <Button
+        android:layout_width="110dp"
+        android:layout_height="65dp"
+        android:text="@string/add_assignment_ADD_button"
+        android:id="@+id/addAssignmentADDbutton"
+        android:layout_below="@+id/add_assignment_space3"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true" />
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:id="@+id/add_assignment_space1"
+        android:layout_below="@id/addAssignmentADDbutton"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/add_assignment_space1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:hint="@string/add_assignment_class_name"
+        android:textSize="30sp"
+        android:id="@+id/add_assignment_class_name" />
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:id="@+id/add_assignment_space2"
+        android:layout_below="@id/add_assignment_class_name"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/add_assignment_space2"
+        android:id="@+id/add_assignment_title"
+        android:textSize="30sp"
+        android:hint="@string/add_assignment_title"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:id="@+id/add_assignment_space4"
+        android:layout_below="@id/add_assignment_title"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:layout_below="@+id/add_assignment_space4"
+        android:id="@+id/add_assignment_percent_of_grade"
+        android:textSize="30sp"
+        android:hint="@string/add_assignment_percent_of_grade"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:id="@+id/add_assignment_space5"
+        android:layout_below="@id/add_assignment_percent_of_grade"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:layout_below="@+id/add_assignment_space5"
+        android:id="@+id/add_assignment_score"
+        android:textSize="30sp"
+        android:hint="@string/add_assignment_score"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

@@ -1,7 +1,9 @@
 package com.github.studybuddy.rcos.studybuddy_app;
 
 import java.text.DecimalFormat;
+import java.util.Collections;
 import java.util.List;
+import java.util.Vector;
 
 /**
  * Created by cordom2 on 7/31/2015.
@@ -11,7 +13,7 @@ public class ClassData {
     private String className="";
     private int credits;
     private double percentIn, GPA, grade, minPossible, maxPossible;
-    private List<String> assignmentList;
+    public Vector<String> assignmentList = new Vector<String>();
 
     public ClassData(String className, int credits){
         this.className= className;
@@ -126,17 +128,27 @@ public class ClassData {
         this.minPossible = minPossible;
     }
 
+    public void sortAssignmentList(){
+        Collections.sort(assignmentList);
+    }
+
     public void addAnAssignment(String assignmentName, double percentOfGrade, double score){
         String percentOfGradeSTR= String.valueOf(percentOfGrade);
         String scoreSTR= String.valueOf(score);
 
-        String newAssignment= assignmentName + ", " + percentOfGrade + "% of grade, Grade: " + score;
-        //assignmentList.add(newAssignment);   THIS LINE CAUSES AN ERROR!!!!!!!!!!
+        String newAssignment= className +", " + assignmentName + ", " + percentOfGrade +
+                                "% of grade, Grade: " + score;
+        assignmentList.add(newAssignment);
+        sortAssignmentList();
 
         double newGrade= (grade*(percentIn/100) + score*(percentOfGrade/100))*(100/(percentIn+percentOfGrade));
         percentIn += percentOfGrade;
         grade= newGrade;
 
+    }
+
+    public Vector<String> getAssignmentList(){
+        return assignmentList;
     }
 }
 
