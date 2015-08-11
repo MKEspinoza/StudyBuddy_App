@@ -20,6 +20,14 @@
             android:name=".assign_add_Fragment"
             android:label="Add New Assignment" >
         </activity>
+        <activity
+            android:name=".assign_add_edit_date"
+            android:label="Edit Due Date" >
+        </activity>
+        <activity
+            android:name=".assign_add_edit_time"
+            android:label="Edit Due Date - Time" >
+        </activity>
     </application>
 
 </manifest>

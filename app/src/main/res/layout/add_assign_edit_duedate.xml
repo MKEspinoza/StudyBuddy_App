@@ -14,14 +14,14 @@
     <DatePicker
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/duedatePicker" />
+        android:id="@+id/datePicker" />
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:textSize="20sp"
         android:text="SET DUE DATE"
-        android:id="@+id/button_duedate_done"/>
+        android:id="@+id/button_date_done"/>
 
 
 </LinearLayout>
